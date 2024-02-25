@@ -3,6 +3,21 @@ body {
     color: rgb(33, 33, 33);
     background: rgb(255, 255, 255)
 }
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+p, h1, h2, h3, h4, h5,h6 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
 
 .list {
     list-style: none;
@@ -12,6 +27,20 @@ body {
     text-decoration: none;
 }
 
+.header-head {
+    display: flex;
+}
+
+.header-div {
+    display: flex;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border: 1px solid rgb(236, 236, 236);
+}
+
 .logo-header {
     font-family: "Raleway", sans-serif;
         font-size: 26px;
@@ -19,10 +48,17 @@ body {
         line-height: 1.15;
         letter-spacing: 0.03em;
     color: #000000;  
+    margin-right: 93px;
 }
 
 .web {
     color: #2196F3;
+}
+
+.header-nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
 }
 
 .header-item {
@@ -43,6 +79,13 @@ font-weight: 500;
     color:#2196F3;
 }
 
+.header-list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    align-items: center;
+}
+
 .header-link {
         font-size: 14px;
         font-weight: 500;
@@ -56,17 +99,28 @@ font-weight: 500;
 
 .head {
     background-color: rgb(47, 48, 58);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
+
 .head-text {
+    width: 696px;
+    height: 120px;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-left: 260px;
+    margin-right: 260px;
+    text-align: center;
 }
-
+ 
 .button {
+    width: 216px;
+    height: 50px;
     color: rgb(255, 255, 255);
     background-color: #2196F3;
         font-family: Roboto, sans-serif;
@@ -75,7 +129,20 @@ font-weight: 500;
         line-height: 1.88;
         letter-spacing: 0.06em;
         cursor: pointer;
+        border-radius: 4px;
+        margin-left: 477px;
+        margin-right: 477px;
+        border: 0;
+}
 
+.hero {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hero-list {
+    display: flex;
+justify-content: space-between;
 }
 
 .hero-item-head {
@@ -83,6 +150,12 @@ font-weight: 500;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero-list-item {
+    width: 270px;
+height: 98px;
 }
 
 .hero-item-text {
@@ -92,31 +165,62 @@ font-weight: 500;
     line-height: 1.71;
 }
 
+.doing {
+    padding-bottom: 94px;
+}
+
+ .doing-photo {
+    display: flex;
+    gap: 30px;
+ }
+
 .doing-title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 
 .team {
     background-color: rgb(245, 244, 250);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
+ .team-list {
+    display: flex;
+    gap: 30px;
+ }
+ 
+ .team-item {
+    border-radius: 0px 0px 4px 4px;
+        /* material shadow v1 */
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        background: rgb(255, 255, 255);
+ }
 .team-title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-
+.team-list-info {
+padding-top: 30px;   
+padding-bottom: 30px;
+}
 .team-name {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .team-work {
@@ -125,10 +229,13 @@ font-weight: 500;
         font-weight: 400;
         line-height: 1.19;
         letter-spacing: 0.03em;
+        text-align: center;
 }
 
 .footer {
     background: rgb(47, 48, 58);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -166,7 +273,27 @@ font-family: "Raleway", sans-serif;
     color: #2196F3;
 }
 
+.logo-footer-div {
+margin-bottom: 21px;
+}
+.footer-item {
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+}
+
 /* portfolio */
+.menu{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.menu-list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 8px;
+}
 
 .menu-button {
     color: rgb(33, 33, 33);
@@ -176,8 +303,18 @@ font-family: "Raleway", sans-serif;
     line-height: 1.625;
     letter-spacing: 0.03em;
     background: rgb(245, 244, 250);
-    cursor: pointer;    
+    cursor: pointer; 
+    border-radius: 4px; 
+    height: 38px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: 0;
 }
+.main {
+    color: rgb(255, 255, 255);
+    background-color: #2196F3;
+}
+
 .menu-button:hover {
     color: rgb(255, 255, 255);
     background-color: #2196F3;
@@ -200,4 +337,20 @@ font-family: "Raleway", sans-serif;
 
 .menu-link {
     color: rgb(33, 33, 33);
+}
+
+.work-list {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 27px;
+}
+
+.work-list-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.work-list-item {
+    border: 1px solid rgb(238, 238, 238);
 }
