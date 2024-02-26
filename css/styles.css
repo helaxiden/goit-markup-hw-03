@@ -19,6 +19,9 @@ ul, ol {
     padding: 0;
 }
 
+img {
+    display: block;
+}
 .list {
     list-style: none;
 }
@@ -36,9 +39,7 @@ ul, ol {
 }
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border: 1px solid rgb(236, 236, 236);
+    border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 .logo-header {
@@ -49,6 +50,10 @@ ul, ol {
         letter-spacing: 0.03em;
     color: #000000;  
     margin-right: 93px;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+        padding-bottom: 25px;
 }
 
 .web {
@@ -59,6 +64,7 @@ ul, ol {
     display: flex;
     gap: 50px;
     align-items: center;
+    
 }
 
 .header-item {
@@ -66,12 +72,12 @@ ul, ol {
     font-size: 14px;
     line-height: 1.14;
     color: rgb(33, 33, 33);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
 }
 
-.header-item-now {
-font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+.now {
     color: #2196F3;
 }
 
@@ -91,6 +97,8 @@ font-weight: 500;
         font-weight: 500;
         line-height: 1.14;
         color: #757575;
+        padding-top: 32px;
+        padding-bottom: 32px;
 }
 
 .header-link:hover {
@@ -142,7 +150,7 @@ font-weight: 500;
 
 .hero-list {
     display: flex;
-justify-content: space-between;
+    gap: 30px;
 }
 
 .hero-item-head {
@@ -197,8 +205,6 @@ height: 98px;
  
  .team-item {
     border-radius: 0px 0px 4px 4px;
-        /* material shadow v1 */
-        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         background: rgb(255, 255, 255);
  }
 .team-title {
@@ -273,13 +279,14 @@ font-family: "Raleway", sans-serif;
     color: #2196F3;
 }
 
-.logo-footer-div {
-margin-bottom: 21px;
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
 }
+
 .footer-item {
-    display: flex;
-    gap: 9px;
-    flex-direction: column;
+    display: block;
+    margin-bottom: 9px;
 }
 
 /* portfolio */
@@ -325,6 +332,7 @@ margin-bottom: 21px;
         font-weight: 700;
         line-height: 2;
         letter-spacing: 0.06em;
+        margin-bottom: 4px;
 }
 
 .work-text {
@@ -342,7 +350,7 @@ margin-bottom: 21px;
 .work-list {
     display: flex;
         flex-wrap: wrap;
-        gap: 27px;
+        gap: 30px;
 }
 
 .work-list-div {
@@ -350,7 +358,7 @@ margin-bottom: 21px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-}
-.work-list-item {
-    border: 1px solid rgb(238, 238, 238);
+    border-left: 1px solid rgb(238, 238, 238);;
+    border-right: 1px solid rgb(238, 238, 238);;
+    border-bottom: 1px solid rgb(238, 238, 238);;
 }
