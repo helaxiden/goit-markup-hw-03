@@ -286,8 +286,11 @@ font-family: "Raleway", sans-serif;
 
 .footer-item {
     display: block;
+}  
+
+.footer-item:nth-child(-n + 2) {
     margin-bottom: 9px;
-}
+
 
 /* portfolio */
 .menu{
